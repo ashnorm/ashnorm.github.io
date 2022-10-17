@@ -1,0 +1,32 @@
+/* grid file P1 Part 3 */ 
+
+.row: before,
+.row: after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.container-fluid {
+	width: 100%;
+}
+
+.container-fluid .row {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.column {
+  float: left;
+  width: 270px;
+  padding: 60px;
+  height: 370px;
+}
