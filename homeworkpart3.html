@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ashley's Student Guide</title>
+		
+		<!-- Link style sheet for added design features through css -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="grid.css">
+
+		<!-- Add a variety of Roboto fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<body style="background-color: #d6d2cb;">
+		<header>
+			<header class="container">
+				<div class="row">
+
+			<!-- Logo layout --> 
+					<a href="index.html"> 
+						<img src="grad-logo.png">
+					</a>
+				</div>
+
+			<!-- Navigation menu --> 
+				<nav class="navigation">
+					<ul>
+						<li class="topmargin"><a href="#">Productivity</a></li>
+						<li class="topmargin"><a href="#">Grades</a></li>
+						<li class="topmargin"><a href="#">Tools</a></li>
+						<li class="topmargin"><a href="#">Login</a></li>
+					</ul>
+				</nav>
+			</header>
+		</header>
+
+		<!-- hero section --> 
+			<!-- create a section for the hero in a fluid container to allow the information to adjust to screen size --> 
+		<section class="container-fluid" id="hero">	
+			<div class="container">
+				<div class="row">
+				<div class="centered">
+					<h1>Welcome to Student Essentials</h1>
+					<h2>Making student life easier</h2>
+					<p id="make-account"><a href="#">Create Account</a></p>
+				</div>
+				</div>
+			</div>
+		</section>	
+
+		<!-- Reminders box to draw students attention to upcoming assignments/homework -->
+
+			<h2>Upcoming Deadlines</h2>
+			<h3>To keep you on track, customize reminders to show upcoming deadlines and tasks to accomplish.</h3>
+			<div id="reminderbox">
+				<p>
+					<h4>Reminders</h4>
+						<ul>
+							<li>Midterm Friday</li>
+							<li>Pay bills</li>
+							<li>Assignment due October 31</li>
+						</ul>
+				</p>
+			</div>
+			
+		<!-- create section for 3 equal columns to show tools--> 
+
+		<span><h2>Tools</h2></span>
+			<h3>To make student life easier & more efficient, our platform is designed to provide all the tools a student may need in one simple destination. </h3>
+		<section class="container-fluid" id="tools">
+			<div class="row">
+			
+			  <div class="column" style="background-color:#aaa;">
+			    <h2>Pomodoro Timer</h2>
+			    <a href="https://pomofocus.io/"> 
+					<img src="clock.jpg">
+				</a>
+			    <p>The Pomodoro Timer is an effective study technique where an individual works for 25 minutes straight, then rests for 5 minutes, in regular intervals. </p>
+			  </div>
+			  <div class="column" style="background-color:#bbb;">
+			    <h2>Calendar</h2>
+			    <a href="https://calendar.google.com/calendar/"> 
+					<img src="calendar-icon.jpg">
+				</a>
+			    <p>Organize your busy schedule into a calendar to keep track of due dates and upcoming events. </p>
+			  </div>
+			  <div class="column" style="background-color:#ccc;">
+			    <h2>Study Playlists</h2>
+			    <a href="https://open.spotify.com/playlist/3WLDIcG4Cx2UOPy0rbFhQn"> 
+					<img src="music.jpg">
+				</a>
+			    <p>Listen to suggested study playlists to help focus and de-stress while completing your tasks.</p>
+			  </div>
+			</div>
+		</section>
+	</body>
