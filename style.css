@@ -1,121 +1,147 @@
-/* Style sheet for P1 pt2 */ 
+/* Style sheet for P1 pt4 */ 
 
-/* colors 
-Background color #d6d2cb
-*/
+/* Clear floats before and after the columns */
 
-a {
-	margin: 0px 40px;
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
 }
 
-header h1 {
-	font-size: 2.25em;
-	margin: 20px 200px;
-	color: darkblue;
+.row:after {
+  clear: both;
 }
 
-h2 {
-	font-size: 1.35em;
-	font-weight: 500;
-	margin: 40px 200px 0px 200px;
-}
 
-h3 {
-	font-size: 1.1em;
-	font-weight: 400;
-	margin: 18px 200px 0px 200px;
-}
+/* General styling */ 
 
-header a {
-	text-decoration: none;
-	font-size: 1.15em;
-	color: darkgreen;
-}
-
-header ul {
-	list-style: none;
+img {
+	max-width: 100%;
 }
 
 body {
-	font-family: 'Roboto', sans-serif;  
+	font-family: 'Roboto', sans-serif;
+	margin: 0px;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  background-color: white;
-  padding: 7px;
-  margin: 40px 300px 40px 200px;
-  border-radius: 10px;
-}
-.grid-item1 {
-  background-color: #d4b274;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
-  padding: 20px;
-  margin: 5px;
-  font-size: 1.35em;
-  font-weight: 500;
-  text-align: center;
-}
-.grid-item2 {
-  background-color: #cfc986;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
-  padding: 20px;
-  margin: 5px;
-  font-size: 1.35em;
-  font-weight: 500;
-  text-align: center;
-}
-.grid-item3 {
-  background-color: #a5d197;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
-  padding: 20px;
-  margin: 5px;
-  font-size: 1.35em;
-  font-weight: 500;
-  text-align: center;
-}
-.grid-item4 {
-  background-color: #a5dae6;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
-  padding: 20px;
-  margin: 5px;
-  font-size: 1.35em;
-  font-weight: 500;
-  text-align: center;
+h1 {
+
 }
 
-#reminderbox {
-	background-color: lightyellow;
-	border-style: solid;
-	border-color: black;
-	border-width: 3px;
-	padding-left: 20px;
-	margin: 40px 500px 0px 200px;
-	font-size: 1em;
+h2 { 
+
 }
 
-h4 {
-	font-size: 1.35em;
+h3 {
+	color: black;
+	font-size: 12px;
 	font-weight: 400;
+	text-align: center;
+}
+
+#gallery h3 {
+	text-transform: uppercase;	
+	text-align: center;
+	font-weight: 600;
+	font-size: 23px;
+}
+
+/* hero */ 
+
+#hero {
+	background-image: url("../../ashnorm.github.io/landscape.jpg");
+	background-size: cover;
+	background-attachment: absolute;
+	height: 80vh;
+	width: 100%;
+	margin: 0px;
+}
+
+#hero-chunk {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+#hero h1 {
+	margin-top: 50px;
+	margin-bottom: 25px;
+	padding-top: 50px;
+	color: #000000;
+	font-size: 55px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+#hero h3 {
+	font-size: 22px;
+	font-weight: 500;
 	text-align: left;
 }
 
-p#productivity {
-	margin-left: 160px;
-	margin-top: 30px;
+a.CTA {
+	margin-top: 500px;
+	background-color: #587356;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 1em 2em;
+	
 }
 
-p#productivity a {
-	color: darkorange;
-	background-color: floralwhite;
-	font-weight: 500;
-	border: solid 2px black;
-	padding: 5px 10px;
-	border-radius: 10px;
+a.CTA:hover {
+	background-color: #739470;
+}
+
+/* photo grid */ 
+/* Create two equal columns that floats next to each other */
+
+#Explore h3 {
+	text-transform: uppercase;	
+	text-align: center;
+	font-weight: 600;
+	font-size: 23px;
+	margin-top: 50px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 2px;
+}
+
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 2px;
+}
+
+.column img {
+  margin-top: 12px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.navigation ul{
+	list-style: none;
+	margin-left: 420px;
+}
+
+.navigation li {
+	float: left;
+	padding: 15px;
+}
+
+.navigation li a {
+	color: #66615a;
+	text-align: center;
 	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
 }
