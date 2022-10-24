@@ -49,7 +49,7 @@ h3 {
 /* hero */ 
 
 #hero {
-	background-image: url("../../ashnorm.github.io/landscape.jpg");
+	background-image: url("../../landscape.jpg");
 	background-size: cover;
 	background-attachment: absolute;
 	height: 80vh;
