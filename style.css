@@ -1,0 +1,145 @@
+/* Style sheet for P1 pt4 */ 
+
+/* Clear floats before and after the columns */
+
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+
+/* General styling */ 
+
+img {
+	max-width: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0px;
+}
+
+h1 {
+
+}
+
+h2 { 
+
+}
+
+h3 {
+	color: black;
+	font-size: 12px;
+	font-weight: 400;
+	text-align: center;
+}
+
+#gallery h3 {
+	text-transform: uppercase;	
+	text-align: center;
+	font-weight: 600;
+	font-size: 23px;
+}
+
+/* hero */ 
+
+#hero {
+	background-image: url("../../ashnorm.github.io/landscape.jpg");
+	background-size: cover;
+	background-attachment: absolute;
+	height: 80vh;
+	width: 100%;
+	margin: 0px;
+}
+
+#hero-chunk {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+#hero h1 {
+	margin-top: 50px;
+	margin-bottom: 25px;
+	padding-top: 50px;
+	color: #000000;
+	font-size: 55px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+#hero h3 {
+	font-size: 22px;
+	font-weight: 500;
+	text-align: left;
+}
+
+a.CTA {
+	background-color: #587356;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 1em 2em;
+}
+
+a.CTA:hover {
+	background-color: #739470;
+}
+
+/* photo grid */ 
+/* Create two equal columns that floats next to each other */
+
+#Explore h3 {
+	text-transform: uppercase;	
+	text-align: center;
+	font-weight: 600;
+	font-size: 23px;
+	margin-top: 50px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 2px;
+}
+
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 2px;
+}
+
+.column img {
+  margin-top: 12px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.navigation ul{
+	list-style: none;
+	margin-left: 420px;
+}
+
+.navigation li {
+	float: left;
+	padding: 15px;
+}
+
+.navigation li a {
+	color: #66615a;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
