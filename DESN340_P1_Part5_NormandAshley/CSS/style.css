@@ -1,0 +1,171 @@
+/* style css for p1 part 5 */ 
+
+/* light orange #d9a004 
+   dark orange #a17602      */ 
+
+#warn .alert-warning {
+	width: 100%;
+	text-align: center;
+}
+
+/* Clear floats before and after the columns */
+
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+
+/* General styling */ 
+
+img {
+	max-width: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0px;
+}
+
+h3 {
+	color: black;
+	font-size: 12px;
+	font-weight: 400;
+	text-align: center;
+}
+
+#gallery h3 {
+	text-transform: uppercase;	
+	text-align: center;
+	font-weight: 600;
+	font-size: 23px;
+}
+
+#navibar {
+	max-width: 100%;
+}
+
+.alert-warning {
+	margin-bottom: 0px;
+	color: black;
+	max-width: 100%;
+}
+
+#categories {
+	text-align: center;
+}
+
+
+/* hero */ 
+
+#hero {
+	background-image: url("../images/dudes.jpg");
+	background-size: cover;
+	background-attachment: absolute;
+	height: 80vh;
+	width: 100%;
+	margin: 0px;
+}
+
+#hero-chunk {
+	margin-left: 20px;
+}
+
+#hero h1 {
+	margin-top: 50px;
+	margin-bottom: 25px;
+	padding-top: 50px;
+	color: #fff;
+	font-size: 55px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+#hero h3 {
+	font-size: 22px;
+	font-weight: 500;
+	text-align: left;
+	color: #fff;
+}
+
+a.CTA {
+	display: inline-block;
+	background-color: #d9a004;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	padding: 0.8em 1.5em;
+	margin-top: 10px;
+}
+
+a.CTA:hover {
+	background-color: #a17602;
+}
+
+
+
+#Explore h3 {
+	text-transform: uppercase;	
+	text-align: center;
+	font-weight: 600;
+	font-size: 23px;
+	margin-top: 50px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.navigation ul{
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+}
+
+.navigation li {
+	float: left;
+	padding: 15px;
+	text-align: center;
+}
+
+.navigation li a {
+	display: inline-block;
+	color: #66615a;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.btn {
+	background-color: orange;
+	border-color: orange;
+	color: black;
+}
+
+.btn:hover {
+	background-color: #b37f05;
+	border-color: #b37f05;
+	color: black;
+}
+
+
+#carouselExampleIndicators {
+	width: 70%;
+	height: 60vh;
+	margin-left: 200px;
+	margin-right: 100px;
+}
+
+.carousel-indicators {
+	margin-bottom: 0px;
+}
