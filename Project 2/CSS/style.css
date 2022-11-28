@@ -1,0 +1,833 @@
+/* Style sheet for fiftythree redesign - Project 2
+
+Colors: 
+white: #fff;
+black : #000000
+red highlight
+Blue #153B84
+Orange #c2402f
+peachy #ffeae7
+gray #161616
+contrast button color #ef57d4
+
+H1 is GT Super Super @ 60
+
+H2 is GT Super Super @ 36
+
+H3 is Poppins Medium at 20
+
+H4 is GT-Super at 20
+
+H5 is Poppins Regular at 20
+
+
+Montserrat for main titles
+eaves for body text
+
+ */
+
+
+/* UNIVERSAL STYLING AND RULES */ 
+
+/* BOX MODEL FIX */ 
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* CLEAR FIX */
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+
+/* IMAGE RULES */
+img {
+	width: 100%;
+}
+
+
+/* TYPE HEIRARCHY */ 
+@font-face {
+    font-family: "GT-Super";
+    src: url("../GT-Super/GT-Super-Display-Super.woff2");
+}
+
+@font-face {
+	font-family: "GT-Medium";
+	src: url("../GT-Super/GT-Super-Display-Medium.woff2");
+}
+
+@font-face {
+	font-family: "GT-Light";
+	src: url("../GT-Super/GT-Super-Display-Regular.woff2");
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+h1 {
+	font-family: "GT-Super";
+	font-size: 60px;
+	margin: 1;
+	/* we could also use font-size: 4rem; to get the same size. 
+	Ultimatley if we were building a site to be completely 
+	responsive then we would want to use this but I am going 
+	to use my Figma File as a refernce and they use absolute values
+	*/
+}
+
+h2 {
+	font-family: "GT-Super";
+	font-size: 36px;
+	margin: 0;
+}
+
+h3 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+h4 {
+	font-family: "GT-Super";
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+h5 {
+	font-family: 'Poppins';
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.8rem;
+}
+
+p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Poppins';
+}
+
+ul {
+	list-style-type: none;
+}
+
+.tighten {
+	letter-spacing: -0.03em;
+}
+
+/* HEADER STYLES AND RULES */
+header {
+	background-color: #153b84;
+	color: #fff;
+	position: fixed;
+	height: 10vh;
+	z-index: 4;
+	font-size: 0.7em;
+}
+
+.icon {
+	fill:  whitesmoke;
+}
+
+header li {
+	float: left;
+	margin-left: 18px;
+}
+
+#logo a {
+	display: inline-block;
+	padding: 1rem;
+	max-width: 120px;
+	margin-top: 15px;
+}
+
+#search {
+	display: inline-block;
+	border-style: solid;
+	border-color: #fff;
+	margin-left: 10px;
+	padding: 1rem 20px;
+	border-radius: 30px;
+	width: 310px;
+}
+
+#search a {
+	line-height: 100px;
+}
+
+header ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 15px;
+}	
+
+
+/* HOMEPAGE HERO STYLES AND RULES */ 
+#hero {
+	background-image: url("../images/hero1.jpg");
+	background-size: cover;
+	height: 90vh;
+}
+
+#hero-chunk {
+	width: 30vw;
+	color: #fff;
+	margin-top: 200px;
+	margin-left: 100px;
+}
+
+#hero h1 {
+	padding-bottom: 16px;
+}
+
+#hero h5 {
+	padding-bottom: 30px;
+}
+
+a.CTA {
+	background-color: #c2402f;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	padding: 1em 2.5em;
+	border-radius: 2em;
+}
+
+a.CTA:hover {
+	background-color: #e45c4a;
+}
+
+
+/* HOMEPAGE MISSION STATEMENT STYLES AND RULES */ 
+#mission {
+	text-align: center;
+	color: #161616;
+	width: 45vw;
+	margin: 80px auto;
+	margin-bottom: 160px;
+}
+
+#mission h2 {
+	padding-bottom: 60px;
+}
+
+#mission p {
+	width: 40vw;
+	margin: 0 auto;
+}
+
+
+/* SPLASH PICTURE */
+#splash {
+	width: 100%;
+	height: 100vh;
+	margin-top: -100px;
+	background-image: url("../images/splash.png");
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to 
+	cover the entire container */
+}
+
+
+/* HOMEPAGE PRODUCT FEATURE STYLES AND RULES */ 
+#feature {
+	margin-top: -470px;
+}
+
+.card-chunk span {
+	font-family: "GT-Light";
+	font-size: 34px;
+}
+
+.card-chunk h2 {
+	margin: 50px 0;
+}
+
+.card-chunk p {
+	margin-bottom: 50px;
+}
+
+a.CTAtoo {
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	padding: 1em 2.5em;
+	border-radius: 2em;
+	border-style: solid;
+} 
+
+a.CTAtoo:hover {
+	background-color: #fff;
+	color: #000000;
+}
+
+#paper {
+	background-color: #161616;
+	color: #fff;
+	width: 95vw;
+	height: 720px;
+	margin: 0 auto;
+	border-radius: 20px;
+	margin-bottom: 50px;
+	padding: 100px;
+	display: grid;
+	grid-template-columns: 470px 670px;
+	column-gap: 30px;
+	overflow: hidden;
+}
+
+#pencil {
+	background-color: #fff;
+	color: #161616;
+	width: 95vw;
+	height: 720px;
+	margin: 0 auto;
+	border-radius: 20px;
+	padding: 100px;
+	display: grid;
+	grid-template-columns: 670px 470px;
+	column-gap: 30px;
+	overflow: hidden;
+}
+
+#video {
+	background-color: black;
+	width: 970px;
+	margin: -300px auto;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+#video video {
+	display: block;
+	margin: 0 auto;
+}
+
+#illust {
+	margin-top: -500px;
+	height: 570px;
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+}
+
+#illust h6 {
+	font-size: 10px;
+	color: #fff;
+	position: absolute;
+	right: 20px;
+	bottom: 0px;
+	z-index: -1;
+}
+
+#illust img{
+	position: absolute;
+	z-index: -2;
+}
+
+#product-grid {
+	width: 1170px;
+	margin: 50px auto;
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(4, 1fr);
+	text-align: center;
+}
+
+#newsletter {
+	height: 20vh;
+	margin-top: 40px;
+}
+
+#newsletter .row {
+	margin-bottom: 30px;
+}
+
+#newsletter .btn {
+	background-color: none;
+}
+
+#newsletter .btn:hover {
+	background-color: black;
+}
+
+.btn {
+	border-radius: 50px;
+}
+
+
+/* ABOUT PAGE STYLE AND RULES */
+#hero2 {
+	background-image: url("../images/hero2.jpg");
+	background-size: cover;
+	height: 80vh;
+}
+
+#hero2-chunk {
+	width: 30vw;
+	color: #fff;
+	margin-top: 300px;
+	margin-left: 100px;
+}
+
+#hero2 h1 {
+	padding-bottom: 16px;
+}
+
+#hero2 h5 {
+	padding-bottom: 30px;
+}
+
+#navtext {
+  background-image: url("../images/white-back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1500px;
+}
+
+#hello {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#why, #what {
+	background-color: #ffcab5;
+	color: #161616;
+	width: 55vw;
+	margin: 0 auto;
+	border-radius: 20px;
+	padding: 100px;
+	display: grid;
+	overflow: hidden;
+}
+
+#why {
+	height: 450px;
+}
+
+#what {
+	height: 575px;
+	margin-top: 100px;
+}
+
+#navtext {
+	margin: 0 auto;
+	padding: 100px;
+	display: grid;
+}
+
+#navtext span {
+	font-weight: 600;
+	color: #000000;
+}
+
+#navtext h2 {
+	margin-bottom: 25px;
+}
+
+#navtext p {
+	margin-top: 18px;
+}
+
+@media (min-width: 576px) {
+	.col-sm-7 {
+		flex: 0 0 58.33%;
+		max-width: 58.33%;
+	}
+}
+
+
+/*PAPER PAGE STYLES AND RULES*/
+#hero3 {
+	background-image: url("../images/book.jpg");
+	background-size: cover;
+	height: 85vh;
+}
+
+#hero3-chunk {
+	width: 400px;
+	color: #fff;
+	margin-top: 230px;
+	margin-left: 100px;
+}
+
+#hero3 h1 {
+	padding-bottom: 16px;
+}
+
+#hero3 h5 {
+	margin-bottom: 25px;
+}
+
+#hero3-chunk h1 span {
+	font-family: "GT-Light";
+}
+
+#papery {
+	background-color: #161616;
+	color: #fff;
+	width: 90vw;
+	height: 68vh;
+	margin: 0 auto;
+	margin-top: 100px;
+	border-radius: 20px;
+	margin-bottom: 100px;
+	padding: 110px;
+	display: grid;
+	grid-template-columns: 25vw 40vw;
+	column-gap: 30px;
+	overflow: hidden;
+}
+
+#papery img {
+	margin-left: 140px;
+}
+
+#papery p {
+	margin-top: 20px;
+}
+
+.paper-chunk span {
+	font-family: "GT-Light";
+	font-size: 36px;
+}
+
+.paper-chunk h2 {
+	margin: 70px 0 30px 0;
+}
+
+.paper-chunk h5 {
+	margin-bottom: 35px;
+}
+
+/*SCROLL SECTION OF BODY - RULES & STYLES*/
+#paperscroll {
+  background-image: url("../images/wood-paper.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+	#paperscroll-chunk {
+		width: 20vw;
+		color: #000000;
+		padding-top: 300px;
+		margin-left: 75px;
+	}
+
+	#paperscroll-chunk span {
+		font-family: "GT-Light";
+	}
+
+	#paperscroll-chunk h2 {
+		margin-bottom: 25px;
+	}
+
+#paperscroll2 {
+  background-image: url("../images/yellow-paper.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+	#paperscroll-chunk2 {
+	width: 20vw;
+	color: #000000;
+	padding-top: 300px;
+	margin-left: 75px;
+	}
+
+	#paperscroll-chunk2 span {
+		font-family: "GT-Light";
+	}
+
+	#paperscroll-chunk2 h2 {
+		margin-bottom: 25px;
+	}
+
+#paperscroll3 {
+  background-image: url("../images/blackpaper.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+	#paperscroll-chunk3 {
+		width: 20vw;
+		color: #fff;
+		padding-top: 300px;
+		margin-left: 75px;
+	}
+
+	#paperscroll-chunk3 span {
+		font-family: "GT-Light";
+	}
+
+	#paperscroll-chunk3 h2 {
+		margin-bottom: 25px;
+	}
+
+
+
+/*FOOTER STYLES AND RULES */
+footer {
+	background-color: #161616;
+	border-radius: 125px 125px 0px 0px;
+	color: #fff;
+	position: relative;
+	z-index: 4;
+}
+
+footer h4 {
+	padding: 2rem;
+	font-family: "GT-Light";
+}
+
+#partners {
+	text-align: center;
+	color: #fff;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	padding: 0 5%;
+}
+
+#partners ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+footer li {
+	text-align: center;
+	font-family: 'Poppins';
+	font-size: 14px;
+	padding-bottom: 15px;
+}
+
+#airbnb {
+	margin-top: 10px;
+}
+
+#scholastic {
+	margin-top: 22px;
+}
+
+#sap {
+	margin-top: 5px;
+	padding-right: 5px;
+}
+
+#intercom {
+	margin-top: 17px;
+	padding-right: 80px;
+}
+
+#foot-links {
+	margin-top: 40px;
+}
+
+#foot-links li:first-child {
+	font-weight: 600;
+	padding-bottom: 30px;
+}
+
+#foot-links ul {
+	display: flex;
+	flex-direction: column;
+}
+
+#foot-links li {
+	text-align: left;
+}
+
+#foot-links img {
+	max-width: 70px;
+}
+
+#socials {
+	display: flex;
+	flex-direction: row;
+}
+
+#legal {
+	text-align: right;
+}
+
+#legal span {
+	margin-left: 30px;
+}
+
+#bottom {
+	justify-content: space-between;
+	font-size: 12px;
+	margin-top: 40px;
+	color: antiquewhite;
+}
+
+
+/*MEDIA QUERIES*/
+/*couldn't figure out how to make header responsive*/
+/*ABOUT PAGE*/
+@media (max-width: 400px) {
+	#hero2-chunk {
+	width: 50vw;
+	color: #fff;
+	margin-top: 175px;
+	margin-left: 20px;
+}
+	#navtext {
+		padding: 20px;
+		height: 2450px;
+	}
+	#why, #what {
+	width: 80vw;
+	text-align: center;
+	padding: 50px;
+}
+	#why {
+	height: 800px;
+}
+	#what {
+		height: 1150px;
+		margin-top: 100px;
+}
+}
+
+/*PAPER PAGE*/
+@media (max-width: 400px) {
+	#hero3-chunk {
+	width: 70vw;
+	color: #fff;
+	margin-top: 150px;
+	margin-left: 20px;
+	}
+	#hero3-chunk h1 {
+		font-size: 48px;
+	}
+	#hero3-chunk h5 {
+		font-size: 17px;
+	}
+	.paper-chunk {
+		width: 75vw;
+	}
+	#papery {
+	width: 90vw;
+	height: 110vh;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	padding: 30px;
+	text-align: left;
+	}
+	#papery img {
+		margin-left: -135px;
+		margin-top: 475px;
+		width: 80vw;
+	}
+	.paper-chunk h2 {
+		margin: 30px 0 30px 0;
+	}
+	#paperscroll-chunk, #paperscroll-chunk2, #paperscroll-chunk3 {
+		width: 60vw;
+		padding-top: 150px;
+		margin-left: 25px;
+	}
+}
+
+/*HOMEPAGE*/
+@media (max-width: 400px) {
+	#hero-chunk {
+	width: 60vw;
+	margin-top: 150px;
+	margin-left: 20px;
+	}
+	#mission {
+	width: 75vw;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 160px;
+	}
+	#mission p {
+	width: 65vw;
+	}
+	#feature {
+		margin-top: -400px;
+	}
+	.card-chunk {
+		width: 350px;
+	}
+	.card-chunk h2, p, a {
+		width: 350px;
+		text-align: left;
+	}
+	#paper {
+		width: 85vw;
+		height: 550px;
+		margin-bottom: 50px;
+		padding: 20px;
+	}
+	#pencil {
+		width: 90vw;
+		height: 800px;
+		padding: 20px;
+	}
+	#video {
+		width: 75vw;
+		height: 150px;
+		margin-top: -250px;
+	}
+	#illust {
+		margin-top: 300px;
+		height: 500px;
+	}
+	#illust h6 {
+		font-size: 10px;
+		color: #fff;
+		position: absolute;
+		right: 20px;
+		bottom: 0px;
+		z-index: -1;
+	}
+	#products {
+		width: 90vw;
+	}
+	#product-grid {
+		width: 87vw;
+		margin: 20px auto;
+	}
+}
