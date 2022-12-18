@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags --> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title of site --> 
+    <title>Little Ghost Homepage</title>
+
+    <!-- list normalize css style sheet to remove default styling properties -->
+    <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
+
+    <!-- link bootstrap CDN to use ready to use components --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+    <!-- link Montserrat and Oswald font from Google fonts, use reference font-family: 'Montserrat', sans-serif; and 'Oswald', sans-serif; for use in CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+ 
+
+    <!-- link the style sheet last so nothing gets overwritten by the normalize file -->
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <!-- anything after head will be shown in the browser -->
+  </head>
+
+  <body>
+    <!-- flexrox header that is responsive with iphone -->
+    <header>
+        <div class="flexrow">
+          <div id="logo"> 
+          <!-- insert logo image --> 
+            <a id="logo1" href="homepage.html">
+              <img src="images/logo1.png" alt="Little Ghost Logo" style="width: 45px; height: 58px;"></a>
+            <a id="logo2" href="homepage.html">LITTLE GHOST</a>
+          </div>
+          <div class="navy">
+            <nav class="navgrid">
+                <a id="menu" href="menu&products.html">MENU & PRODUCTS</a>
+                <a href="about.html">ABOUT</a>
+           </nav> 
+          </div>
+       </div>
+    </header>
+
+    <!-- hero --> 
+    <div class="container-fluid" id="hero">
+      <div class="container">  
+        <div class="row">
+          <section id="hero-chunk">
+            <h1>LITTLE GHOST</h1>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- who are we section -->
+    <section class="container-fluid" id="who">
+      <div id="whoarewe">
+        <h2>WHO ARE WE</h2>
+        <p>Little ghost prides itself on the unique, one-of-a-kind experiences they provide to customers. We bring a focus to creating pleasant, creative atmospheres while providing relaxing environments that anyone can enjoy. </p>
+        <p>We hold seasonal pop-up locations throughout the year, each with different stories to tell - Begin yours today!</p>
+        <a href="about.html" class="CTA">LEARN MORE</a>
+      </div>
+    </section>  
+
+      
+      <!-- seasonal menu section -->
+      <section class="container-fluid" id="seasonal">
+        <hr>
+        <div id="menupic">
+          <img src="images/coffee-dessert.jpg" alt="coffee and dessert">
+        </div>
+        <div id="seasonalitems">
+          <h2>SEASONAL ITEMS</h2>
+        </div>
+        <div id="homemenu">
+          <h5>gingerbread latte<span>4.5</span></h5>
+          <p>sweet notes of gingerbread and spice, poured over freshly brewed espresso, paired perfectly with oat milk and whipped cream.</p>
+          <h5>snickerdoodle cookies<span>1.0</span></h5>
+          <p>irresistibly delicious cookies with a soft, doughy center and a hint of cinnamon.</p>
+          <a href="menu&products.html" class="CTA">VIEW MENU</a>
+        </div>
+      </section>  
+
+      <!-- hours section-->
+      <section class="container-fluid" id="coffeehours">
+        <div id="hourspic">
+          <!-- insert image in css -->
+        </div>
+        <div id="hours">
+          <h2>HOURS</h2>
+          <hr>
+          <h5>monday - friday<span>7am - 8pm</span></h5>
+          <h5>saturday - sunday<span>9am - 7pm</span></h5>
+        </div>  
+      </section>
+
+      <!-- winter pop-up section -->
+      <section class="container-fluid" id="winter">
+        <div id="popup">
+          <h2>EXPERIENCE OUR WINTER POP-UP</h2> 
+          <h5>visit us</h5> 
+          <p>110373-47, False Creek <br>Edmonton, Alberta</p>
+          <h5>dates</h5>
+          <p>open from Dec 1st to Dec 8th</p>
+          <h5>contact</h5>
+          <p>780.999.6464<br>cafe@littleghost.ca</p>
+        </div>
+        
+        <div id="ghostmap">
+          <img src="images/ghostmap.png" alt="Little Ghost Map">
+        </div>
+      </section>
+
+       <!-- footer -->
+      <section id="footer">
+        <div class="newsgrid">
+          <div id="newsletter">
+            <h5>STAY UP TO DATE WITH OUR NEWSLETTER</h5>
+          </div>
+          <div id="newsbutton">  
+            <a href="#" class="newsCTA">email</a>
+          </div>
+        </div>
+        <hr>
+        <div class="footerlinks">
+          <div id="socials">
+            <img src="images/twitter.png">
+            <img src="images/facebook.png">
+            <img src="images/instagram.png">
+            <p>Terms | Privacy</p>
+          </div>
+          <div id="menuprodloc">
+            <h5>menu</h5>
+            <h5>products</h5>
+            <h5>location</h5>
+          </div>
+          <div id="aboutcontact">
+            <h5>about</h5>
+            <h5>contact us</h5>
+          </div>
+        </div>
+      </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  </body>
+</html>
