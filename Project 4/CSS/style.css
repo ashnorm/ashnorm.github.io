@@ -1,0 +1,1398 @@
+/*STYLE SHEET FOR PROJECT 4 - LITTLE GHOST*/
+
+/*COLORS 
+
+black: #000000;
+dark green: #495145;
+sage green: #839286;
+cream: #DAD7CD;
+white: #161616;
+brown: #8E7B60;
+button hover color: 
+
+*/
+
+/*TYPE HEIRARCHY
+
+h1 Oswald medium @ 80
+h2 Oswald light @ 40
+h3 montserrat semibold @ 40
+h4 Montserrat regular @ 33
+h5 montserrat medium @ 20 
+p Montserrat regular @ 15
+*/
+
+/* -------UNIVERSAL STYLING AND RULES-------- */ 
+
+/* box model fix */ 
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* clear fix  */
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+/* IMAGE RULES */
+img {
+	width: 100%;
+}
+
+
+/* TYPE HEIRARCHY */ 
+body {
+	background-color: black;
+}
+
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 80px;
+	font-weight: 500;
+	margin: 1;
+}
+
+h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+	font-weight: 300;
+	margin: 0;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 33px;
+	font-weight: 400;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+h5 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 1.8rem;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #DAD7CD;
+	font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a:hover {
+	color: #839286;
+}
+
+a.CTA {
+	background-color: #DAD7CD;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	color: #000000;
+	padding: 0.8em 2.3em;
+}
+
+a.CTA:hover {
+	background-color: #8E7B60;
+}
+
+
+/*---------HEADER STYLING-----------*/
+header {
+	background-color: black;
+}
+
+header a {
+	color: #DAD7CD;
+}
+
+#logo a img {
+	margin-left: 30px;
+}
+
+#logo2 {
+	display: none;
+}
+
+.flexrow {
+	width: 90vw;
+	height: 12vh;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.navy {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navygrid {
+	width: 400px;
+	height: 10vh;
+	display: grid;
+	grid-template-columns: 3fr 3fr;
+	grid-template-rows: 1fr;
+	column-gap: 5%;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	align-content: space-between;
+}
+
+#logo {
+	height: 10vh;
+	margin-top: 12px;
+}
+
+#menu {
+	margin-right: 100px;
+}
+
+/*----------HOMEPAGE HERO STYLES AND RULES--------*/
+#hero {
+	background-image: url("../images/hero.jpg");
+	background-size: cover;
+	height: 90vh;
+}
+
+#hero-chunk {
+	width: 35vw;
+	color: #DAD7CD;
+	margin-top: 485px;
+	margin-left: 27px;
+}
+
+#hero h1 {
+	padding-bottom: 16px;
+}
+
+
+/*----------WHO ARE WE SECTION-----------*/
+#who {
+	width: 100%;
+	height: 73vh;
+	background-image: url("../images/wholights.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#whoarewe {
+	width: 50vw;
+	height: 70vh;
+	color: #DAD7CD;
+	border-style: solid;
+	border-color: #DAD7CD;
+	border-width: 2px;
+	background-color: black;
+	text-align: center;
+	padding: 65px;
+	margin-top: -40px;
+	margin-left: 300px;
+	position: absolute;
+	z-index: 1;
+}
+
+#whoarewe h2 {
+	margin-top: 0px;
+}
+
+#whoarewe p {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+
+
+
+/*--------SEASONAL MENU STYLING -------*/
+hr {
+	border-color: #DAD7CD;
+	width: 75vw;
+	margin-left: 160px;
+}
+
+#seasonal {
+	height: 100vh;
+}
+
+
+#menupic img {
+	width: 28vw;
+	height: 75vh;
+	margin-top: 50px;
+	margin-left: 215px;
+	margin-bottom: 50px;
+	position: absolute;
+	z-index: 1;
+}
+
+#homemenu {
+	width: 610px;
+	height: 480px;
+	color: #DAD7CD;
+	background-color: #495145;
+	text-align: left;
+	padding: 60px;
+	margin-top: 140px;
+	margin-left: 453px;
+	position: absolute;
+	z-index: -1;
+}
+
+#homemenu h5, #homemenu p, #homemenu a {
+	margin-left: 120px;
+	margin-top: -8px;
+}
+
+#seasonalitems h2 {
+	position: absolute;
+	z-index: 2;
+	margin-top: 66px;
+	margin-left: 518px;
+	color: #DAD7CD;
+}
+
+#homemenu span {
+	margin-left: 60px;
+	font-weight: 600;
+}
+
+#homemenu p {
+	margin-top: 15px;
+	margin-bottom: 55px;
+}
+
+
+/*--------- HOURS STYLING -----------*/
+#coffeehours {
+	width: 100%;
+	margin-top: 8vh;
+	height: 30vh;
+	padding: 0px;
+}
+
+#hourspic {
+	width: 98.7vw;
+	height: 30vh;
+	background-image: url("../images/hourscups.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 1;
+}
+
+#hours {
+	width: 48vw;
+	height: 30vh;
+	color: #DAD7CD;
+	border-style: solid;
+	border-color: #DAD7CD;
+	border-width: 2px;
+	background-color: black;
+	text-align: center;
+	padding: 30px;
+	margin-top: 150px;
+	margin-left: 333px;
+	position: absolute;
+	z-index: 2;
+}
+
+#hours h5 {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+#hours h5 span {
+	margin-left: 30px;
+}
+
+#coffeehours hr {
+	border-color: #DAD7CD;
+	width: 15vw;
+	margin-left: 175px;
+}
+
+
+/*------ WINTER POP-UP STYLING ------*/
+#winter {
+	height: 80vh;
+	margin-top: 300px;
+}
+
+#popup {
+	width: 40vw;
+	margin-top: 40px;
+	margin-left: 150px;
+}
+
+#popup h2 {
+	margin-bottom: 50px;
+	color: #DAD7CB;
+	margin-left: 30px;
+}
+
+#popup h5 {
+	color: #B6C4B9;
+	margin-left: 171px;
+	margin-top: 40px;
+}
+
+#popup p {
+	color: #DAD7CB;
+	margin-left: 171px;
+	margin-top: 8px;
+}
+
+#ghostmap img {
+	width: 480px;
+	height: 480px;
+	margin-top: -400px;
+	margin-left: 655px;
+}
+
+
+
+/*--------------------MENU AND PRODUCTS PAGE -----------*/
+/*--------- HERO STYLING ---------*/
+#hero2 {
+	background-image: url("../images/wood-coffee2.png");
+	background-size: cover;
+	height: 630px;
+}
+
+#hero-chunk2 {
+	text-align: center;
+	background-color: #8E7B60;
+	color: black;
+	height: 18vh;
+	width: 100vw;
+	margin-top: 455px;
+}
+
+#hero-chunk2 h1 {
+	margin-top: 14px;
+}
+
+
+/*--------- PRODUCTS STYLING ---------*/
+#productss {
+	width: 59vw;
+	color: #DAD7CB;
+	text-align: center;
+	padding: 70px 10px;
+	margin: 0 auto
+}
+
+#productss hr {
+	width: 20vw;
+	margin-left: 235px;
+	margin-bottom: 25px;
+}
+
+#productss h5 {
+	margin-bottom: 30px;
+}
+
+
+/*--------- MENU STYLING -------------*/
+/*drinks*/
+#drinkmenu {
+	height: 140vh;
+}
+
+#drinkpic img {
+	width: 28vw;
+	height: 75vh;
+	margin-top: 50px;
+	margin-left: 215px;
+	margin-bottom: 50px;
+	position: absolute;
+	z-index: 1;
+}
+
+#drinklist {
+	width: 610px;
+	height: 132vh;
+	color: black;
+	background-color: #6f7b71;
+	text-align: left;
+	padding: 60px;
+	margin-top: 140px;
+	margin-left: 453px;
+	position: absolute;
+	z-index: -1;
+}
+
+#drinklist h5, #drinklist p {
+	margin-left: 120px;
+	margin-top: -8px;
+}
+
+#drinks h2 {
+	position: absolute;
+	z-index: 2;
+	margin-top: 67px;
+	margin-left: 518px;
+	color: #DAD7CD;
+}
+
+#drinklist span {
+	margin-left: 60px;
+	font-weight: 600;
+}
+
+#drinklist p {
+	margin-top: 15px;
+	margin-bottom: 55px;
+}
+
+/*food*/
+#foodmenu {
+	margin-top: 200px;
+	height: 85vh;
+}
+
+#foodpic img {
+	width: 28vw;
+	height: 75vh;
+	margin-top: 50px;
+	margin-left: 703px;
+	margin-bottom: 50px;
+	position: absolute;
+	z-index: 1;
+}
+
+#foodlist {
+	width: 610px;
+	height: 75vh;
+	background-color: #495145;
+	color: white;
+	text-align: left;
+	padding: 60px;
+	margin-top: 140px;
+	margin-left: 215px;
+	position: absolute;
+	z-index: -1;
+}
+
+#foodlist h5, #foodlist p {
+	margin-left: 10px;
+	margin-right: 120px;
+	margin-top: -8px;
+}
+
+#pastry h2 {
+	position: absolute;
+	z-index: 2;
+	margin-top: 67px;
+	margin-left: 628px;
+	color: #DAD7CD;
+}
+
+#foodlist span {
+	margin-left: 60px;
+	font-weight: 600;
+}
+
+#foodlist p {
+	margin-top: 15px;
+	margin-bottom: 55px;
+}
+
+
+/*---------- CRAYONS STYLING --------*/
+#crayons {
+	margin-top: 200px;
+	height: 85vh;
+}
+
+#crayonspic img {
+	width: 28vw;
+	height: 75vh;
+	margin-top: 50px;
+	margin-left: 215px;
+	margin-bottom: 50px;
+	position: absolute;
+	z-index: 1;
+}
+
+#crayoninfo {
+	width: 610px;
+	height: 70vh;
+	color: black;
+	background-color: #8E7B60;
+	text-align: left;
+	padding: 60px;
+	margin-top: 140px;
+	margin-left: 453px;
+	position: absolute;
+	z-index: -1;
+}
+
+#crayoninfo h5, #crayoninfo p {
+	margin-left: 120px;
+	margin-top: -8px;
+}
+
+#crayonss h2 {
+	position: absolute;
+	z-index: 2;
+	margin-top: 67px;
+	margin-left: 534px;
+	color: #DAD7CD;
+}
+
+#crayoninfo span {
+	margin-left: 60px;
+	font-weight: 600;
+}
+
+#crayoninfo p {
+	margin-top: 15px;
+	margin-bottom: 55px;
+}
+
+
+
+/*-------- VIST US STYLING --------*/
+#comejoin {
+	height: 590px;
+}
+
+#visitus {
+	margin-top: -23px;
+	background-image: url("../images/lit.png");
+	background-size: cover;
+	height: 615px;
+	position: absolute;
+	z-index: -2;
+}
+
+#visitinfo {
+	width: 40vw;
+	height: 44vh;
+	color: #DAD7CB;
+	position: absolute;
+	z-index: 1;
+	border-color: #DAD7CB;
+	border-width: 2px;
+	border-style: solid;
+	background-color: black;
+	text-align: center;
+	padding: 70px 65px;
+	margin-top: 250px;
+	margin-left: 100px;
+}
+
+#visitinfo h5 {
+	margin-top: 25px;
+
+}
+
+
+/*------------ ABOUT PAGE STYLING ----------*/
+#heroo {
+	height: 280vh;
+	background-image: url("../images/teammeet.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#hero3 {
+	height: 692px;
+}
+
+#hero-chunk3 {
+	text-align: center;
+	background-color: #8E7B60;
+	color: black;
+	height: 18vh;
+	width: 100vw;
+	margin-top: 455px;
+}
+
+#hero-chunk3 h1 {
+	margin-top: 14px;
+}
+
+#about-chunk {
+	width: 40vw;
+	height: 59vh;
+	color: #DAD7CB;
+	position: absolute;
+	border-color: #DAD7CB;
+	border-width: 2px;
+	border-style: solid;
+	background-color: black;
+	text-align: center;
+	padding: 50px;
+	margin-top: 775px;
+	margin-left: 650px;
+}
+
+#about-chunk h5 {
+	margin-top: 30px;
+	font-size: 18px;
+}
+
+#why-chunk {
+	width: 40vw;
+	height: 59vh;
+	color: #DAD7CB;
+	position: absolute;
+	border-color: #DAD7CB;
+	border-width: 2px;
+	border-style: solid;
+	background-color: black;
+	text-align: center;
+	padding: 50px;
+	margin-top: 1425px;
+	margin-left: 132px;
+}
+
+#why-chunk h5 {
+	margin-top: 30px;
+	font-size: 18px;
+}
+
+/*--- QUESTIONS ---*/
+#questions {
+	margin-top: -23px;
+	background-image: url("../images/plant-cafe.jpg");
+	background-size: cover;
+	height: 710px;
+	position: absolute;
+	width: 100%;
+}
+
+.formgrid {
+	display: grid;
+	grid-template-columns: 425px 425px;
+	column-gap: 0px;
+	padding: 60px;
+	height: 75vh;
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(200,200,200, 0.7); /* Black w/opacity/see-through */
+	color: black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 70%;
+	padding: 20px;
+	text-align: center;
+}
+
+#question {
+	padding: 90px;
+}
+
+#question hr {
+	width: 17vw;
+	border-color: black;
+	opacity: 100;
+	margin-left: 12px;
+}
+
+#question h5 {
+	font-size: 18px;
+	margin-top: 25px;
+}
+
+#question span {
+	font-weight: 600;
+}
+
+#form {
+	background-color: #DAD7CB;
+	margin: 30px 40px 30px 0px;
+	padding: 30px;
+	text-align: left;
+}
+
+#form hr {
+	border-color: black;
+	opacity: 100;
+	margin-left: 0px;
+	width: 23vw;
+	margin-top: 0px;
+	margin-bottom: 36px;
+}
+
+#form p {
+	font-weight: 500;
+	margin-bottom: 3px;
+}
+
+#form p span {
+	margin-top: 40px;
+	font-weight: 300;
+}
+
+#button {
+	margin-top: 50px;
+	margin-left: 100px;
+}
+
+a.submit {
+	background-color: black;
+	color: #DAD7CB;
+	padding: 0.6em 2.3em;
+	font-weight: 600;
+	font-size: 15px;
+	font-family: 'Montserrat',sans-serif;
+}
+
+
+
+/*------- FOOTER STYLING ------*/
+#footer {
+	color: black;
+	background-color: #495145;
+	height: 45vh;
+}
+
+#footer2 {
+	height: 45vh;
+	margin-top: 685px;
+	color: black;
+	background-color: #495145;
+}
+
+#newsletter h5 {
+	margin-left: 150px;
+}
+
+.newsgrid {
+	display: grid;
+	grid-template-columns: 650px 500px;
+	column-gap: 0px;
+	padding: 60px 60px 45px 60px;
+}
+
+a.newsCTA {
+	background-color: black;
+	border-radius: 22px;
+	font-size: 17px;
+	font-weight: 300;
+	color: #DAD7CB;
+	padding: 10px 300px 10px 20px;
+}
+
+#newsletter a:hover {
+	background-color: none;
+}
+
+#footer hr, #footer2 hr {
+	border-color: black;
+	border-width: 2px;
+	width: 75vw;
+	opacity: 100;
+	margin: 0 0 0 160px;
+}
+
+.footerlinks {
+	display: grid;
+	grid-template-columns: 350px 450px 300px;
+	column-gap: 0px;
+	padding: 45px 60px 0px 60px;
+}
+
+#socials {
+	margin-left: 150px;
+}
+
+#socials img {
+	width: 41px;
+	height: 41px;
+	margin-right: 20px;
+}
+
+#socials p {
+	font-size: 12px;
+	margin-top: 40px;
+	font-weight: 500;
+}
+
+#menuprodloc {
+	margin-left: 200px;
+}
+
+#aboutcontact {
+	margin-left: 110px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+/*--header--*/
+@media (max-width: 400px) {
+	#menu {
+	margin-right: 30px;
+}
+#logo a img {
+	margin-left: 10px;
+}
+/*--hero--*/
+#hero-chunk {
+	width: 70vw;
+	margin-top: 330px;
+	margin-left: 20px;
+}
+#hero h1 {
+	padding-bottom: 16px;
+	font-size: 70px;
+}
+/*--who are we--*/
+#whoarewe {
+	width: 70vw;
+	height: 110vh;
+	margin-top: -40px;
+	margin-left: 50px;
+	padding: 35px;
+}
+
+#whoarewe h2 {
+	font-size: 35px;
+}
+
+/*--seasonal---*/
+#seasonal hr {
+	width: 75vw;
+	margin-top: 270px;
+	margin-left: 40px;
+}
+
+#seasonal {
+	margin-top: 30px;
+	height: 150vh;
+}
+
+#menupic img {
+	width: 65vw;
+	height: 65vh;
+	margin-top: 100px;
+	margin-left: 60px;
+	margin-bottom: 50px;
+}
+
+#homemenu {
+	width: 75vw;
+	height: 600px;
+	padding: 30px;
+	margin-top: 465px;
+	margin-left: 38px;
+}
+
+#homemenu h5, #homemenu p, #homemenu a {
+	margin-left: 13px;
+	margin-top: 45px;
+}
+
+#homemenu h5 {
+	font-size: 18px;
+}
+
+#seasonalitems h2 {
+	margin-top: 35px;
+	margin-left: 70px;
+}
+
+#homemenu span {
+	margin-left: 30px;
+}
+
+#homemenu p {
+	margin-top: 15px;
+	margin-bottom: 55px;
+}
+
+
+
+/*--hours--*/
+#coffeehours {
+	margin-top: 47vh;
+	height: 40vh;
+}
+
+#hourspic {
+	width: 100vw;
+}
+
+#hours {
+	width: 77vw;
+	height: 32vh;
+	padding: 27px;
+	margin-top: 122px;
+	margin-left: 48px;
+}
+
+#coffeehours hr {
+	margin-top: 10px;
+	width: 36vw;
+	margin-left: 52px;
+}
+
+#hours h5 {
+	margin-top: 5px;
+	margin-bottom: 7px;
+	font-size: 15px;
+}
+
+#hours h5 span {
+	margin-left: 30px;
+}
+
+
+/*-- winter pop-up*/
+#winter {
+	height: 120vh;
+	margin-top: 210px;
+}
+
+#popup {
+	width: 70vw;
+	margin-top: 70px;
+	margin-left: 20px;
+}
+
+#popup h2 {
+	margin-bottom: 50px;
+	margin-left: 12px;
+}
+
+#popup h5 {
+	margin-left: 40px;
+	margin-top: 40px;
+}
+
+#popup p {
+	margin-left: 40px;
+	margin-top: 8px;
+}
+
+#ghostmap img {
+	width: 300px;
+	height: 300px;
+	margin-top: 0px;
+	margin-left: 25px;
+}
+
+
+
+/*---- MENU AND PRODUCTS PAGE*/
+/**/
+/*hero*/
+#hero2 {
+	height: 580px;
+}
+
+#hero-chunk2 {
+	height: 26vh;
+	margin-top: 369px;
+}
+
+#hero-chunk2 h1 {
+	margin-top: 9px;
+	font-size: 60px;
+}
+
+
+/*products info*/
+#productss {
+	width: 69vw;
+	padding: 70px 10px;
+	margin: 0 auto
+}
+
+#productss hr {
+	width: 52vw;
+	margin-left: 22px;
+}
+
+
+
+/*menu*/
+/*drinks*/
+#drinkmenu {
+	height: 270vh;
+	margin-top: 50px;
+}
+
+#drinkpic img {
+	width: 65vw;
+	height: 69vh;
+	margin-left: 57px;
+}
+
+#drinklist {
+	width: 76vw;
+	height: 193vh;
+	padding: 80px 40px 40px 40px;
+	margin-top: 444px;
+	margin-left: 35px;
+}
+
+#drinklist h5, #drinklist p {
+	margin-left: 0px;
+	margin-top: -8px;
+}
+
+#drinklist h5 {
+	font-size: 18px;
+}
+
+#drinks h2 {
+	margin-top: -10px;
+	margin-left: 132px;
+}
+
+#drinklist span {
+	margin-left: 26px;
+	font-weight: 600;
+}
+
+#drinklist p {
+	margin-top: 15px;
+	margin-bottom: 55px;
+}
+
+/*food*/
+#foodmenu {
+	margin-top: 135px;
+	height: 173vh;
+}
+
+#foodpic img {
+	width: 65vw;
+	height: 69vh;
+	margin-left: 57px;
+}
+
+#foodlist {
+	width: 76vw;
+	height: 112vh;
+	padding: 80px 40px 40px 40px;
+	margin-top: 444px;
+	margin-left: 35px;
+}
+
+#foodlist h5, #foodlist p {
+	margin-left: 10px;
+	margin-right: 0px;
+	margin-top: -8px;
+}
+
+#foodlist h5 {
+	font-size: 18px;
+}
+
+#pastry h2 {
+	margin-top: -10px;
+	margin-left: 132px;
+}
+
+#foodlist p {
+	margin-top: 15px;
+	margin-bottom: 55px;
+}
+
+#foodlist span {
+	margin-left: 26px;
+	font-weight: 600;
+}
+
+
+/*---------- CRAYONS STYLING --------*/
+#crayons {
+	margin-top: 240px;
+	height: 170vh;
+}
+
+#crayonspic img {
+	width: 65vw;
+	height: 69vh;
+	margin-left: 57px;
+}
+
+#crayoninfo {
+	width: 76vw;
+	height: 90vh;
+	padding: 80px 40px 40px 40px;
+	margin-top: 444px;
+	margin-left: 35px;
+}
+
+#crayoninfo h5, #crayoninfo p {
+	margin-left: 0px;
+	margin-top: -8px;
+}
+
+#crayonss h2 {
+	margin-top: -10px;
+	margin-left: 121px;
+}
+
+#crayoninfo p {
+	margin-top: 15px;
+	margin-bottom: 55px;
+}
+
+
+/*-------- VIST US STYLING --------*/
+#comejoin {
+	height: 510px;
+}
+
+#visitus {
+	margin-top: -104px;
+	height: 267px;
+}
+
+#visitinfo {
+	width: 54vw;
+	height: 48vh;
+	padding: 40px 20px;
+	margin-top: 250px;
+	margin-left: 35px;
+}
+
+#visitus h2 {
+	font-size: 35px;
+}
+
+#visitinfo h5 {
+	margin-top: 25px;
+	font-size: 17px;
+}
+
+
+/*about*/
+#heroo {
+	height: 325vh;
+}
+
+#hero3 {
+	height: 270vh;
+}
+
+#hero-chunk3 {
+	height: 15vh;
+	margin-top: 369px;
+}
+
+#hero-chunk3 h1 {
+	margin-top: 9px;
+	font-size: 60px;
+}
+
+#about-chunk {
+	width: 69vw;
+	height: 92vh;
+	padding: 28px;
+	margin-top: 650px;
+	margin-left: 30px;
+}
+
+#about-chunk h5 {
+	margin-top: 30px;
+	font-size: 16px;
+}
+
+#about-chunk h2, #whychunk h2 {
+	margin-top: 20px;
+}
+
+#why-chunk {
+	width: 69vw;
+	height: 85vh;
+	padding: 28px;
+	margin-top: 1425px;
+	margin-left: 100px;
+}
+
+#why-chunk h5 {
+	margin-top: 30px;
+	font-size: 16px;
+}
+
+/*questions section */
+#questions {
+	margin-top: 0px;
+	height: 900px;
+}
+
+.formgrid {
+	margin-top: -110px;
+	display: block;
+	padding: 30px;
+	width: 80%;
+	height: 75vh;
+	padding: 30px;
+}
+
+#question {
+	padding: 0px;
+}
+
+#question hr {
+	width: 58vw;
+	margin-left: 12px;
+}
+
+#form {
+	margin: 0px;
+	padding: 30px;
+	width: 320px;
+	margin-top: 52px;
+	margin-left: -30px;
+}
+
+#form hr {
+	width: 63vw;
+	margin-bottom: 36px;
+}
+
+#button {
+	margin-top: 40px;
+	margin-left: 67px;
+}
+
+
+
+/*-- footer --*/
+#footer {
+	height: 60vh;
+	margin-top: 50px;
+}
+
+#newsletter h5 {
+	margin-left: 10px;
+	font-size: 15px;
+}
+
+#newsbutton {
+	margin-left: 48px;
+	margin-top: 20px;
+}
+
+.newsgrid {
+	display: block;
+	padding: 30px 20px 40px 20px;
+}
+
+a.newsCTA {
+	font-size: 15px;
+	padding: 10px 200px 10px 20px;
+}
+
+#footer hr, #footer2 hr {
+	margin-left:50px;
+}
+
+.footerlinks {
+	display: block;
+	padding: 30px 60px 0px 60px;
+}
+
+#socials {
+	margin-left: 55px;
+}
+
+#socials img {
+	width: 41px;
+	height: 41px;
+	margin-right: 20px;
+}
+
+#socials p {
+	display: none;
+	margin-top: 10px;
+}
+
+#menuprodloc {
+	margin-top: 30px;
+	margin-left: 35px;
+}
+
+#aboutcontact {
+	margin-left: 165px;
+	margin-top: -87px;
+}
+
+#menuprodloc h5, #aboutcontact h5 {
+	font-size: 15px;
+}
+
+#footer2 {
+	height: 59vh;
+	margin-top: 899px;
+}
+}
